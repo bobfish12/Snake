@@ -1,6 +1,5 @@
 #SNAKE GAME
 
-import turtle, random
 
 class Cell:
   def __init__(self,t):
@@ -43,3 +42,10 @@ class Food:
     for i in range(4):
       t.fd(self.cell.size)
       t.left((90)
+      self.clear()
+  def food_collision(self):
+    if self.cell.x ==x and y == self.cell.y:
+       return True
+    else:
+       return False
+  
