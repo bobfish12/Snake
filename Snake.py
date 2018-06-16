@@ -37,6 +37,8 @@ class Cell:
 class Food:
   def __init__ (self):
   def random_food(self):
+    self.cell.x=random.randint(-200,200)
+    self.cell.y=random.randint(-200,200)
   def draw_square(self, colour):
     for i in range(4):
       t.fd(self.cell.size)
